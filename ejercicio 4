@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     int N, suma=0;
-    
+    cout<<"Se sumaran los numero impares y restaran los numeros pares"<<endl;
     cout<<"ingresa el numero hasta donde quieres contar(N): ";
     cin>>N;
     
@@ -20,7 +20,7 @@ int main()
             suma=suma+i;
         }
     }
-    cout<<"la suma de los numeros entre 1 y N es: "<<suma;
+    cout<<"la resta y suma de los numeros entre 1 y N es: "<<suma;
 
     return 0;
 }
