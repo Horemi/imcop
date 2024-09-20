@@ -1,0 +1,21 @@
+//calcula el MCD entre dos numeros
+#include <iostream>
+using namespace std;
+int main()
+{   int a,b,r=1;
+do{
+    cout<<"Ingrese su primer numero: ";
+    cin>>a;
+    cout<<"Ingrese su segundo número: ";
+    cin>>b;
+    if(a<=0 || b<=0)
+    cout<<"el numero debe ser mayor a cero"<<endl;
+}while(a<=0 || b<=0);
+    while (r!=0){
+        r=a%b;
+        a=b;
+        b=r;
+    }
+    cout<<"El MCD es: "<<a;
+return 0;
+}
