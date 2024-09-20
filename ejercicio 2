@@ -1,0 +1,22 @@
+//contar los numero impares de 1 a N
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N, suma=0;
+    
+    cout<<"ingresa el numero hasta donde quieres contar(N): ";
+    cin>>N;
+    
+    for(int i=1; i<=N; i++) //iniciamos en 1 porque nos pide contar desde 1
+    {   
+        if(i%2==1){
+        suma=suma+i;
+        }
+    }
+    cout<<"la suma de los numeros entre 1 y N es: "<<suma;
+
+    return 0;
+}
