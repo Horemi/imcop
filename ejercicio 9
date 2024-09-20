@@ -1,0 +1,35 @@
+//factorial de un numero N
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+    int X, N, FAC=1;
+    float suma=0;
+    cout<<"Para el calculo S= X/1! - X^2/2! + X^3/3! - ........+-X^n/n!"<<endl;
+    cout<<"Ingrese variable a calcular(X): ";
+    cin>>X;
+    do{
+    cout<<"Ingrese limite exponencial(n): ";
+    cin>>N;
+    }while(N<0); //exponencial y denominador con factorial, debe ser positivo y entero
+    
+    for(int i=1; i<=N; i++){
+        
+        FAC=FAC*i; //para factoriales desde de 1
+        
+        if (i%2==0){
+            suma=suma-(pow(X,i)/FAC);
+        }
+        else {
+            suma=suma+(pow(X,i)/FAC);
+        }
+       
+        
+    }
+    cout<<"la suma y resta de las variables es: "<<suma;
+    return 0;
+    
+}
