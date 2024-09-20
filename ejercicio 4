@@ -1,7 +1,6 @@
 //Calcular la siguiente suma S= 1 - 2 + 3 - 4 + 5 - .........+/- N.
 
 #include <iostream>
-#include "math.h"
 
 using namespace std;
 
@@ -20,7 +19,6 @@ int main()
         else {
             suma=suma+i;
         }
-        
     }
     cout<<"la suma de los numeros entre 1 y N es: "<<suma;
 
