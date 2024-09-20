@@ -4,26 +4,26 @@
 using namespace std;
 
 int main() {
-    // Imprimir la cabecera de la tabla
-    cout << "Tabla de Sumar (1 al 10)" << endl;
-    cout << "----------------------------------------------" << endl;
+    //titulo
+    cout<<"Tabla de Sumar (1 al 10)"<<endl;
+    cout<<"----------------------------------------------"<<endl;
 
-    // Imprimir la primera fila (encabezado de la tabla)
-    cout << " + |";
-    for (int i = 1; i <= 10; i++) {
-        cout << " " << i << " |";
+    //primera fila cabeza
+    cout<<" + |";
+    for (int i=1; i<=10; i++) {
+        cout<<" "<<i<<" |";
     }
-    cout << endl;
-    cout << "----------------------------------------------" << endl;
+    cout<<endl;
+    cout<<"----------------------------------------------"<<endl;
 
     // Imprimir las filas de la tabla
-    for (int j = 1; j <= 10; j++) {
-        cout << " " << j << " |"; // Imprimir el número en la columna de la izquierda
-        for (int i = 1; i <= 10; i++) {
-            cout << " " << (j + i) << " |"; // Imprimir la suma
+    for(int j=1; j<=10; j++) {
+        cout<<" "<<j <<" |"; // iniciales, primer columna
+        for(int i=1; i<=10; i++) {
+            cout<<" "<< (j+i) <<" |"; //suma
         }
-        cout << endl;
-        cout << "----------------------------------------------" << endl; // Línea divisoria
+        cout<<endl;
+        cout<<"----------------------------------------------"<<endl; //division
     }
 
     return 0;
