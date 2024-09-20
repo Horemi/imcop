@@ -1,0 +1,23 @@
+//sumar el cuadrado de los primeros numeros de 1 a N
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+    int N, suma=0;
+    
+    cout<<"ingresa el numero hasta donde quieres contar(N): ";
+    cin>>N;
+    
+    for(int i=1; i<=N; i++) //iniciamos en 1 porque nos pide contar desde 1
+    {   
+        
+        suma=suma+pow(i,2);
+        
+    }
+    cout<<"la suma de los numeros entre 1 y N es: "<<suma;
+
+    return 0;
+}
