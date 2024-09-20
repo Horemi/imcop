@@ -1,0 +1,25 @@
+//calcular mcm
+#include <iostream>
+using namespace std;
+int main()
+{   int a, b, a1, b1, r=1, mcm=0;
+    do{
+    cout<<"Ingrese su primer numero: ";
+    cin>>a1;
+    cout<<"Ingrese su segundo número: ";
+    cin>>b1;
+    if(a1<=0 || b1<=0)
+    cout<<"el numero debe ser mayor a cero"<<endl;
+    }while(a1<=0 || b1<=0);
+    a=a1;
+    b=b1;
+    while (r!=0){
+        r=a%b;
+        a=b;
+        b=r;
+    }
+    
+    mcm=(a1*b1)/a;
+    cout<<"El MCM es: "<<mcm;
+return 0;
+}
