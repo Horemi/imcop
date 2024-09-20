@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    float N, x, suma=0;
+    int N, x, suma=0;
     
     cout<<"ingresa el digito del que quieras hacer sumas exponenciales(X): ";
     cin>>x;
