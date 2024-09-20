@@ -21,7 +21,7 @@ int main()
         }
             FAC=FAC*i; //para factoriales desde de 1
     }
-    cout<<"la multiplicacion de los numeros entre 1 y N es: "<<FAC;
+    cout<<"el factorial de "<<N<<"! es: "<<FAC;
 
     return 0;
 }
