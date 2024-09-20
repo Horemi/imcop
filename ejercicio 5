@@ -5,16 +5,16 @@ using namespace std;
 
 int main()
 {
-    int N, suma=1;
+    int N, P=1;
     
     cout<<"ingresa el numero hasta donde quieres contar(N): ";
     cin>>N;
     
     for(int i=1; i<=N; i++) //iniciamos en 1 porque nos pide contar desde 1
     {   
-            suma=suma*i;
+            P=P*i;
     }
-    cout<<"la multiplicacion de los numeros entre 1 y N es: "<<suma;
+    cout<<"la multiplicacion de los numeros entre 1 y N es: "<<P;
 
     return 0;
 }
