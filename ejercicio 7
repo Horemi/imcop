@@ -1,0 +1,27 @@
+//factorial de un numero N
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int N,FAC=1;
+    do{
+    cout<<"ingresa el numero del que quieres obtener el factorial(N): ";
+    cin>>N;
+    if (N<0)
+        cout<<"el numero debe ser un entero positivo"<<endl;
+    }while(N<0);
+    
+    for(int i=1; i<=N; i++)
+    {   
+        if (N==0)
+        {
+            FAC=1; //condicional en caso de 0!
+        }
+            FAC=FAC*i; //para factoriales desde de 1
+    }
+    cout<<"la multiplicacion de los numeros entre 1 y N es: "<<FAC;
+
+    return 0;
+}
