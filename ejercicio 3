@@ -17,7 +17,7 @@ int main()
         suma=suma+pow(i,2);
         
     }
-    cout<<"la suma de los numeros entre 1 y N es: "<<suma;
+    cout<<"la suma de los cuadrados de los primeros numeros entre 1 y N es: "<<suma;
 
     return 0;
 }
