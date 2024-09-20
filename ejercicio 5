@@ -14,7 +14,7 @@ int main()
     {   
             suma=suma*i;
     }
-    cout<<"la suma de los numeros entre 1 y N es: "<<suma;
+    cout<<"la multiplicacion de los numeros entre 1 y N es: "<<suma;
 
     return 0;
 }
