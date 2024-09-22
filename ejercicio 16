@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, i, divisores = 0;
+
+    cout<<"Ingresa un numero: ";
+    cin>>N;
+
+    if (N > 1) {
+        
+        for (i = 1; i <= N; i++) {
+            if (N % i == 0) {
+                divisores++; 
+            }
+        }
+    }
+
+    if (divisores == 2) {
+        cout<<"el numero "<<N<<" es primo"<<endl;
+    } else {
+        cout<<"el numero "<<N<<" no es primo"<<endl;
+    }
+
+    return 0;
+}
