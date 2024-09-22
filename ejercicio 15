@@ -1,0 +1,46 @@
+//reloj digital
+#include <iostream>
+#include <chrono>
+#include <thread>
+
+using namespace std;
+using namespace std::chrono;
+
+int main() {
+    int h = 0, m = 0, s = 0;
+
+    while (true) {
+        system("clear"); 
+        
+        if (h < 10) {
+            cout << "0";
+        }
+        cout << h << ":";
+
+        if (m < 10) {
+            cout << "0";
+        }
+        cout << m << ":";
+
+        if (s < 10) {
+            cout << "0";
+        }
+        cout << s << endl;
+
+        this_thread::sleep_for(seconds(1)); 
+        s++;
+        if (s == 60) {
+            s = 0;
+            m++;
+            if (m == 60) {
+                m = 0;
+                h++;
+                if (h == 24) {
+                    h = 0;
+                }
+            }
+        }
+    }
+
+    return 0;
+}
